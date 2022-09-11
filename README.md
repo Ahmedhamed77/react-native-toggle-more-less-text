@@ -9,11 +9,20 @@ npm install react-native-toggle-more-less
 ## Usage
 
 ```js
-import { multiply } from "react-native-toggle-more-less";
+import { RnViewMoreLess } from 'react-native-toggle-more-less';
 
 // ...
 
-const result = await multiply(3, 7);
+      <RnViewMoreLess
+        numberOfLines={4}
+        desc={textToDisplay}
+        containerStyle={styles.viewMoreContainer}
+        descStyle={styles.descStyle}
+        moreText={'show more'}
+        moreTextStyle={styles.moreLessTextStyle}
+        lessText="show less"
+        lessTextStyle={styles.moreLessTextStyle}
+      />
 ```
 
 ## Contributing
